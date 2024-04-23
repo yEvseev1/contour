@@ -1,0 +1,61 @@
+html, body, #root, .App {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.map {
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    filter: grayscale(100);
+}
+
+.camera-container-medium {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    z-index: 1;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    transition: .2s linear;
+}
+
+.camera-container-large {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 600px;
+    z-index: 1;
+    border: 1px solid black;
+    border-top: none;
+    border-left: none;
+    transition: .2s linear;
+}
+
+.camera-blocks {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+.camera{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+
+.changeSize {
+    z-index: 2;
+    position: fixed;
+    padding: 6px;
+    border-radius: 10px;
+    transition: 0.1s linear;
+}
+.changeSize:hover {
+    background-color: rgba(128, 128, 128, 0.49);
+}
