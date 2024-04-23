@@ -8,7 +8,6 @@ function App() {
   
   return (
     <div className="App">
-      
       <div className={`${size == 'medium' ? 'camera-container-medium' : 'camera-container-large'}`}>
         <div className='camera-blocks'>
           <div className='camera'>КАМЕРА</div>
