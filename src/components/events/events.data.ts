@@ -9,7 +9,7 @@ export const eventsList: Event[] = [
 	{
 		location: 'МАИ, Кпп 1',
 		time: '12.15',
-		eventContent: 'Пожар',
+		eventContent: 'Пожар Пожар Пожар Пожарv Пожар Пожар ПожарПожар',
 		eventType: 'Огонь',
 	},
 	{

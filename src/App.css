@@ -74,6 +74,9 @@ body,
 }
 
 .events-container {
+	max-height: 700px;
+	overflow-y: scroll;
+	overflow-x: hidden;
 	display: flex;
 	flex-direction: column;
 	align-items: center;
@@ -83,7 +86,27 @@ body,
 	margin-right: 10px;
 	border: 1px solid rgba(87, 87, 87, 0.449);
 	border-radius: 16px;
-	min-width: 350px;
+	min-width: 300px;
+	max-width: 300px;
+}
+
+.events-container::-webkit-scrollbar {
+	width: 8px; /* ширина скроллбара */
+}
+
+.events-container::-webkit-scrollbar-track {
+	background: rgba(47, 47, 47, 0.316); /* цвет дорожки, аналогичен фону контейнера */
+	border-radius: 10px; /* закругление углов дорожки */
+}
+
+.events-container::-webkit-scrollbar-thumb {
+	background-color: rgba(87, 87, 87, 0.449); /* цвет самого скроллбара */
+	border-radius: 10px; /* закругление углов скроллбара */
+	border: 2px solid rgba(47, 47, 47, 0.316); /* граница скроллбара с фоном, как у контейнера */
+}
+
+.events-container::-webkit-scrollbar-thumb:hover {
+	background-color: #555; /* цвет скроллбара при наведении */
 }
 
 .separator {
@@ -106,7 +129,7 @@ body,
 	padding: 12px;
 	border: 1px solid transparent;
 	border-radius: 10px;
-	background-color: rgba(255, 255, 255, 0.197);
+	background-color: rgba(255, 255, 255, 0.86);
 }
 
 .event-item-header {

@@ -7,7 +7,10 @@ function App() {
 	const [size, setSize] = useState<string>('medium')
 
 	return (
-		<div>
+		<div style={{
+      height: '100%',
+      width: '100%'
+    }}>
 			<div>
 				<div
 					className={`${
