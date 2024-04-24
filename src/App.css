@@ -1,61 +1,172 @@
-html, body, #root, .App {
-    height: 100%;
-    width: 100%;
-    margin: 0;
-    padding: 0;
+html,
+body,
+#root {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0;
 }
 
 .map {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    filter: grayscale(100);
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+	filter: grayscale(100);
 }
 
 .camera-container-medium {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 400px;
-    height: 400px;
-    z-index: 1;
-    border: 1px solid black;
-    border-top: none;
-    border-left: none;
-    transition: .2s linear;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 400px;
+	height: 400px;
+	z-index: 1;
+	border: 1px solid black;
+	border-top: none;
+	border-left: none;
+	transition: 0.2s linear;
 }
 
 .camera-container-large {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 700px;
-    height: 600px;
-    z-index: 1;
-    border: 1px solid black;
-    border-top: none;
-    border-left: none;
-    transition: .2s linear;
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 700px;
+	height: 600px;
+	z-index: 1;
+	border: 1px solid black;
+	border-top: none;
+	border-left: none;
+	transition: 0.2s linear;
 }
 
 .camera-blocks {
-    position: relative;
-    width: 100%;
-    height: 100%;
+	display: flex;
+	position: relative;
+	width: 100%;
+	height: 100%;
 }
-.camera{
-    background-color: black;
-    width: 100%;
-    height: 100%;
+.camera {
+	background-color: black;
+	width: 100%;
+	height: 100%;
 }
 
-.changeSize {
-    z-index: 2;
-    position: fixed;
-    padding: 6px;
-    border-radius: 10px;
-    transition: 0.1s linear;
+.resize {
+	position: fixed;
+	z-index: 2;
+	padding: 6px;
+	border-radius: 10px;
+	transition: 0.1s linear;
 }
-.changeSize:hover {
-    background-color: rgba(128, 128, 128, 0.49);
+.resize:hover {
+	background-color: rgba(128, 128, 128, 0.49);
+}
+.resize-icon {
+	color: white;
+}
+
+.events {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 2;
+}
+
+.events-container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	background-color: rgba(47, 47, 47, 0.316);
+	padding: 20px;
+	margin-top: 10px;
+	margin-right: 10px;
+	border: 1px solid rgba(87, 87, 87, 0.449);
+	border-radius: 16px;
+	min-width: 350px;
+}
+
+.separator {
+	width: 100%;
+	border: 1px solid rgba(128, 128, 128, 0.252);
+}
+
+.list {
+	width: 100%;
+	padding: 0px;
+	margin: 0px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 10px;
+}
+
+.event-item {
+	width: 100%;
+	padding: 12px;
+	border: 1px solid transparent;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.197);
+}
+
+.event-item-header {
+	color: rgba(73, 73, 73, 0.435);
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 8px;
+}
+
+.event-item-content {
+	margin-bottom: 10px;
+}
+
+.event-item-footer {
+	color: rgba(73, 73, 73, 0.435);
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.event-item-button {
+	border: 1px solid rgba(112, 112, 112, 0.855);
+	border-radius: 10px;
+	background-color: transparent;
+	padding: 8px 12px;
+	transition: 0.1s linear;
+	font-size: medium;
+	cursor: pointer;
+}
+
+.event-item-button:hover {
+	border: 1px solid rgba(191, 191, 191, 0.417);
+	border-radius: 10px;
+	background-color: gray;
+}
+
+.input-area {
+	border-radius: 10px;
+	margin-top: 20px;
+	margin-left: 4px;
+	max-width: 400px;
+	width: 100%;
+	background-color: rgba(47, 47, 47, 0.316);
+	padding: 10px 16px;
+}
+
+.input-block {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: start;
+	gap: 4px;
+}
+
+.input {
+	max-width: 380px;
+	width: 100%;
+	padding: 6px 10px;
+	border-radius: 10px;
+	border: none;
+	outline: 0;
+	outline-offset: 0;
 }
