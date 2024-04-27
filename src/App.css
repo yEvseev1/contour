@@ -21,7 +21,7 @@ body,
 	width: 400px;
 	height: 400px;
 	z-index: 1;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	border-top: none;
 	border-left: none;
 	transition: 0.2s linear;
@@ -34,7 +34,7 @@ body,
 	width: 700px;
 	height: 600px;
 	z-index: 1;
-	border: 1px solid black;
+	/*border: 1px solid black;*/
 	border-top: none;
 	border-left: none;
 	transition: 0.2s linear;
